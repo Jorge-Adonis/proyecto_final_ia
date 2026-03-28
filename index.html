@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Adaptia: Adaptaciones móviles premium para personas con dificultad motriz. Juega juegos de mesa como Ark Nova con tecnología accesible.">
+    <title>Adaptia | Tecnología para la Inclusión</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="navbar" role="navigation" aria-label="Menú principal">
+            <div class="logo">
+                <img src="/logo.png" alt="Adaptia Logo" height="40">
+                <span>Adaptia</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#mision">Misión</a></li>
+                <li><a href="#productos">Adaptaciones</a></li>
+                <li><a href="#contacto" class="btn btn-secondary">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content reveal">
+                    <h1>Tecnología que conecta <span class="text-accent">momentos.</span></h1>
+                    <p>Diseñamos adaptaciones móviles personalizadas para que personas con movilidad reducida recuperen
+                        la
+                        autonomía en sus pasatiempos favoritos.</p>
+                    <div class="hero-actions">
+                        <a href="#productos" class="btn btn-primary">Ver Adaptaciones</a>
+                        <a href="#mision" class="btn btn-secondary">Nuestra Historia</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal" style="animation-delay: 0.2s">
+                    <div class="glass-card">
+                        <!-- Placeholder or user's photo logic -->
+                        <div class="image-wrapper">
+                            <img src="/ark-nova.jpg" alt="Demostración de adaptación para Ark Nova" class="product-img"
+                                id="hero-img">
+                            <div class="fallback-text" id="img-fallback">
+                                <p>Sube tu foto de Ark Nova aquí</p>
+                                <small>(ark-nova.jpg en la carpeta public)</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission -->
+        <section id="mision" class="mission bg-light">
+            <div class="container reveal">
+                <span class="badge">Nuestra Misión</span>
+                <h2>Más que adaptaciones, creamos independencia</h2>
+                <p>Todo comenzó con la necesidad de jugar Ark Nova. Entendemos los retos de mover cartas y componentes
+                    pequeños, por eso digitalizamos los controles para que tu única preocupación sea la estrategia.</p>
+            </div>
+        </section>
+
+        <!-- Products/Adaptations -->
+        <section id="productos" class="products">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Soluciones a tu medida</h2>
+                </div>
+                <div class="grid">
+                    <div class="glass-card reveal" style="animation-delay: 0.1s">
+                        <h3>Control de Turnos</h3>
+                        <p>Aplicaciones personalizadas para gestionar acciones en juegos de mesa complejos desde el
+                            celular.
+                        </p>
+                    </div>
+                    <div class="glass-card reveal" style="animation-delay: 0.2s">
+                        <h3>Soportes Adaptados</h3>
+                        <p>Diseño físico 3D para sujetar dispositivos en ángulos ergonómicos óptimos.</p>
+                    </div>
+                    <div class="glass-card reveal" style="animation-delay: 0.3s">
+                        <h3>Interfaces Simplificadas</h3>
+                        <p>Botones grandes y gestos personalizados para máxima facilidad de uso.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="glass-card reveal">
+                    <h2>¿Necesitas una adaptación?</h2>
+                    <p>Cuéntanos tu reto y diseñaremos una solución tecnológica juntos.</p>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo</label>
+                            <input type="email" id="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">¿Qué necesitas adaptar?</label>
+                            <textarea id="message" rows="4"
+                                placeholder="Ej: Me cuesta mover las piezas de Catan..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2026 Adaptia Solutions. Diseñado para la inclusión.</p>
+    </footer>
+
+    <!-- Notificación de Confirmación -->
+    <div id="toast-notification" class="toast hidden">
+        <div class="toast-content glass-card">
+            <h3 class="toast-title">¡Solicitud Enviada!</h3>
+            <p class="toast-message">Hemos recibido tu mensaje correctamente. Nuestro equipo revisará los detalles de tu adaptación y nos pondremos en contacto contigo muy pronto al correo que proporcionaste.</p>
+            <button id="close-toast" class="btn btn-secondary">Entendido</button>
+        </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
